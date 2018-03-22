@@ -30,10 +30,27 @@
 
 .filmitem-image {
   height: 17rem;
+  object-fit: cover;
   width: 100%;
 }
 
 .filmitem-link {
   color: var(--white);
   text-decoration: none;
+}
+
+@media(max-width: 1024px) {
+  .app-container {
+    padding: 0 5%;
+  }
+
+  .filmitem-container {
+    flex-basis: 24%;
+  }
+}
+
+@media(max-width: 768px) {
+  .filmitem-container {
+    flex-basis: 49%;
+  }
 }
