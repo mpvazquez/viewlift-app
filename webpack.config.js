@@ -1,5 +1,6 @@
 var webpack = require('webpack')
 var path = require('path')
+
 module.exports = {
   entry: path.resolve(__dirname, 'app'),
   output: {
@@ -10,6 +11,7 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, 'public')
   },
+  mode: 'development',
   module: {
     rules: [
       {test: /\.js$/, exclude: /node_modules/, loaders: ['babel-loader']},
