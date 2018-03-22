@@ -24,7 +24,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='app-container'>
-        <h1>Films!</h1>
+        <h1 className='app-title'>Films!</h1>
         <FilmList films={this.state.films} />
       </div>
     )

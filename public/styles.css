@@ -1,0 +1,39 @@
+:root {
+  --black: #000000;
+  --blue: #008ee0;
+  --white: #FFFFFF;
+
+  background: var(--black);
+}
+
+.app-container {
+  color: var(--white);
+  font-family: Open Sans, sans-serif;
+  padding: 0 10%;
+}
+
+.app-title {
+  color: var(--blue);
+  text-align: center;
+}
+
+.filmlist-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.filmitem-container {
+  flex-basis: 19%;
+  padding-bottom: 1rem;
+}
+
+.filmitem-image {
+  height: 17rem;
+  width: 100%;
+}
+
+.filmitem-link {
+  color: var(--white);
+  text-decoration: none;
+}

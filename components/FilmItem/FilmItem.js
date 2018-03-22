@@ -2,10 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const FilmItem = ({ film }) => {
-  console.log(film)
   return (
     <div className='filmitem-container'>
-      {film.title}
+      <a className='filmitem-link'
+        href={film.permaLink}
+        target="_blank"
+      >
+        <img className='filmitem-image'
+          src={film.images.image[0].src}
+        />
+        <div>{film.title}</div>
+      </a>
     </div>
   )
 }
